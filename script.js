@@ -36,7 +36,6 @@ function renderBookList(bookList) {
     // Mouse enter event
     mouseTarget[i].addEventListener('mouseenter', (e) => {
       //console.log("Mouse Enter")
-      console.log(e.target.id)
       let book = getBook(e.target.id)
       book.then(function (result){
         renderBookDetails(result);
@@ -53,8 +52,7 @@ function renderBookList(bookList) {
   }
 
   function renderBookDetails(book) {
-    console.log('Book Details Function')
-    
+    //console.log('Book Details Function')
     const existingElement = document.getElementById('bookDetail');
     const root = document.getElementById('root');
 
